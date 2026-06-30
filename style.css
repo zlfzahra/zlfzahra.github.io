@@ -285,44 +285,45 @@ a {
   transform: translateY(-3px);
 }
 
-/* PROFILE PHOTO - ROUNDED RECTANGLE */
+/* PROFILE PHOTO - CIRCLE */
 .hero-visual {
   position: relative;
-  min-height: 520px;
+  min-height: 420px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.profile-frame {
-  width: 180px;
-  height: 230px;
+.profile-ring {
+  width: 300px;
+  height: 300px;
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 50%;
   background: linear-gradient(135deg, #fff, #ffd4e5, #d96c9d);
   box-shadow: var(--shadow);
-  overflow: hidden;
+  display: grid;
+  place-items: center;
 }
 
-.profile-frame img {
+.profile-ring img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   background: var(--primary-soft);
-  border-radius: 22px;
-  border: 6px solid var(--card);
+  border-radius: 50%;
+  border: 8px solid var(--card);
 }
 
-.profile-frame.placeholder::after {
+.profile-ring.placeholder::after {
   content: "Upload assets/profile.jpg";
   width: 100%;
   height: 100%;
-  border-radius: 22px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 32px;
+  padding: 30px;
   background: var(--primary-soft);
   color: var(--primary-dark);
   font-weight: 850;
@@ -643,134 +644,115 @@ a {
   transform: translateY(0);
 }
 
-/* ===========================
-   RESPONSIVE
-=========================== */
-
+/* RESPONSIVE */
 @media (max-width: 900px) {
-
-  .menu-toggle{
-    display:block;
+  .menu-toggle {
+    display: block;
   }
 
-  .nav-links{
-    position:absolute;
-    left:18px;
-    right:18px;
-    top:78px;
-    display:none;
-    flex-direction:column;
-    align-items:stretch;
-    background:var(--surface);
-    border:1px solid var(--border);
-    border-radius:18px;
-    padding:14px;
-    box-shadow:var(--shadow);
+  .nav-links {
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    top: 78px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 14px;
+    box-shadow: var(--shadow);
   }
 
-  .nav-links.open{
-    display:flex;
+  .nav-links.open {
+    display: flex;
   }
 
   .nav-links a,
-  .theme-toggle{
-    text-align:left;
+  .theme-toggle {
+    text-align: left;
   }
 
   .hero,
   .grid-two,
   .project-grid,
-  .contact-grid{
-    grid-template-columns:1fr;
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 
-  .hero{
-    text-align:center;
-    gap:30px;
-    padding-top:30px;
+  .hero {
+    text-align: center;
+    gap: 28px;
+    padding-top: 38px;
   }
 
   .hero-actions,
-  .social-row{
-    justify-content:center;
+  .social-row {
+    justify-content: center;
   }
 
-  .hero-visual{
-    min-height:250px;
+  .hero-visual {
+    min-height: 320px;
   }
 
-  .profile-frame{
-    width:230px;
-    height:290px;
-    padding:8px;
-    border-radius:24px;
+  .profile-ring {
+    width: 240px;
+    height: 240px;
   }
 
-  .profile-frame img{
-    border-radius:18px;
+  .floating-card {
+    display: none;
   }
 
-  .floating-card{
-    display:none;
-  }
-
-  .detail-card{
-    grid-template-columns:1fr;
+  .detail-card {
+    grid-template-columns: 1fr;
   }
 
   .news-item,
   .publication-item,
-  .timeline-item{
-    grid-template-columns:1fr;
-    gap:6px;
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 6px;
   }
-
 }
 
-
-@media (max-width:520px){
-
-  .site-header{
-    padding:10px 10px 0;
+@media (max-width: 520px) {
+  .site-header {
+    padding: 10px 10px 0;
   }
 
-  .section{
-    padding:44px 16px;
+  .section {
+    padding: 44px 16px;
   }
 
   .hero h1,
-  .page-hero h1{
-    font-size:40px;
+  .page-hero h1 {
+    font-size: 40px;
   }
 
   .panel,
   .project-card,
   .detail-card,
-  .contact-card{
-    border-radius:20px;
-    padding:22px;
+  .contact-card {
+    border-radius: 20px;
+    padding: 22px;
   }
 
-  .hero-visual{
-    min-height:200px;
+  .hero-visual {
+    min-height: 250px;
   }
 
-  .profile-frame{
-    width:180px;
-    height:230px;
-    padding:6px;
-    border-radius:20px;
+  .profile-ring {
+    width: 180px;
+    height: 180px;
+    padding: 8px;
   }
 
-  .profile-frame img{
-    border-radius:16px;
+  .detail-image {
+    width: 82px;
+    height: 82px;
+    font-size: 38px;
+    border-radius: 22px;
   }
-
-  .detail-image{
-    width:82px;
-    height:82px;
-    font-size:38px;
-    border-radius:22px;
-  }
-
 }
