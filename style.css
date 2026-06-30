@@ -438,39 +438,40 @@ a {
   position: relative;
 }
 
-.timeline-item {
-  position: relative;
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 26px;
-  padding: 24px 0 24px;
-  border-top: 1px solid var(--border);
+.timeline-item{
+    display:grid;
+    grid-template-columns:170px 1fr;
+    gap:28px;
+    align-items:start;
+    padding:24px 0;
+    border-top:1px solid var(--border);
 }
 
-.timeline-item:first-child {
-  border-top: 0;
-  padding-top: 4px;
+.timeline-item:first-child{
+    border-top:none;
 }
 
-.timeline-item span {
-  color: var(--primary);
-  font-size: 13px;
-  font-weight: 850;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+.timeline-item span{
+    display:block;
+    color:var(--primary);
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    white-space:nowrap;
+    margin:0;
 }
 
-.timeline-item h3 {
-  margin: 0 0 8px;
-  font-size: 20px;
-  line-height: 1.35;
-  letter-spacing: -0.035em;
+.timeline-item h3{
+    margin:0 0 8px;
+    font-size:22px;
+    line-height:1.35;
 }
 
-.timeline-item p {
-  margin: 0 0 8px;
-  color: var(--muted);
-  line-height: 1.7;
+.timeline-item p{
+    margin:0 0 10px;
+    color:var(--muted);
+    line-height:1.7;
 }
 
 .timeline-item em {
