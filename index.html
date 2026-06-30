@@ -18,56 +18,55 @@
 
 <body>
 
-    <!-- Navigation -->
+    <!-- ================= NAVBAR ================= -->
     <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="publications.html">Publications</a>
-        <a href="contact.html">Contact</a>
+        <div class="nav-left">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="publications.html">Publications</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
-        <a class="cv-button" href="assets/cv.pdf" target="_blank">
-            Full PDF CV
-        </a>
+        <div class="nav-right">
+            <a href="assets/cv.pdf" class="cv-button" target="_blank">
+                Full PDF CV
+            </a>
+        </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ================= HERO ================= -->
     <section class="hero">
 
-        <img src="assets/profile.jpg" alt="Profile Photo" class="profile">
+        <div class="profile-image">
+            <!-- Profile picture -->
+        </div>
 
-        <div class="hero-text">
+        <div class="hero-content">
 
             <h1>Zalfa Afifah Zahra</h1>
 
-            <h3>
-                Remote Sensing | Earth Observation |
-                Machine Learning
-            </h3>
-
-            <p>
-                Master's Graduate in Civil Engineering and Environmental Informatics,
-                Minghsin University of Science and Technology.
-                My research focuses on satellite remote sensing,
-                environmental monitoring, machine learning,
-                and geospatial AI.
+            <p class="subtitle">
+                Remote Sensing • Earth Observation • Machine Learning
             </p>
 
-            <div class="buttons">
+            <p class="location">
+                📍 Hsinchu, Taiwan
+            </p>
 
-                <a href="mailto:your@email.com">Email</a>
+            <div class="social-links">
 
-                <a href="https://github.com/zlfzahra" target="_blank">
-                    GitHub
-                </a>
+                <a href="#">Email</a>
 
-                <a href="https://www.linkedin.com/" target="_blank">
-                    LinkedIn
-                </a>
+                <a href="#">GitHub</a>
 
-                <a href="#">
-                    Google Scholar
-                </a>
+                <a href="#">LinkedIn</a>
+
+                <a href="#">Google Scholar</a>
+
+                <a href="#">ResearchGate</a>
+
+                <a href="#">ORCID</a>
 
             </div>
 
@@ -75,31 +74,36 @@
 
     </section>
 
-    <!-- Featured Research -->
-    <section class="card">
+    <!-- ================= CONTENT ================= -->
 
-        <h2>Featured Research</h2>
+    <main>
 
-        <h3>Harmful Algal Bloom Detection</h3>
+        <!-- About Preview -->
+        <section class="card">
 
-        <p>
-            Sentinel-2, Google Earth Engine,
-            Random Forest, XGBoost
-        </p>
+            <h2>About</h2>
 
-        <h3>Urban Heat Island Forecasting</h3>
+            <p>
 
-        <p>
-            Landsat 8/9, ERA5, ConvLSTM
-        </p>
+            </p>
 
-        <h3>Sea Surface Temperature Rise Detection</h3>
+        </section>
 
-        <p>
-            CNN, Satellite Imagery
-        </p>
+        <!-- Featured Projects -->
+        <section class="card">
 
-    </section>
+            <h2>Featured Projects</h2>
+
+        </section>
+
+        <!-- News -->
+        <section class="card">
+
+            <h2>News</h2>
+
+        </section>
+
+    </main>
 
 </body>
 
