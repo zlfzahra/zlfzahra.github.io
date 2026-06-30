@@ -11,23 +11,6 @@ I'm passionate about using **Earth Observation**, **Remote Sensing**, and **Geos
 - 🌡️ Climate Analytics
 - 💧 Water Resources and Monitoring
 
-## 🚀 Current Projects
-
-- Harmful Algal Bloom Detection
-- Urban Heat Island Analysis
-- Sea Surface Temperature Monitoring
-
-## 🛠️ Tech Stack
-
-**Languages**
-- Python
-- JavaScript (Google Earth Engine)
-
-**Geospatial Tools**
-- Google Earth Engine
-- QGIS
-- ArcGIS Pro
-
 ## 📫 Connect with Me
 
 - LinkedIn: https://linkedin.com/in/zalfa-afifah-zahra
