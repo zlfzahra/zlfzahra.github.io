@@ -1,53 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Zalfa Afifah Zahra</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/4b4f0f0f4e.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-<header class="site-header"><nav class="navbar"><a class="brand" href="index.html"><span class="brand-dot"></span>Zalfa Afifah Zahra</a><button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="projects.html">Projects</a><a href="publications.html">Publications</a><a href="contact.html">Contact</a><button id="themeToggle" class="theme-toggle">🌙</button><a class="nav-cv" href="assets/cv.pdf" target="_blank">Full PDF CV</a></div></nav></header>
-
 <main>
   <section class="page-hero section reveal">
     <p class="eyebrow">Projects</p>
-    <h1>Selected research projects in satellite remote sensing and machine learning.</h1>
+    <h1>Projects in remote sensing, geospatial AI, environmental monitoring, and engineering design.</h1>
+    <p>
+      My projects combine satellite imagery, machine learning, deep learning,
+      and environmental data analysis for climate resilience, water quality monitoring,
+      urban heat assessment, and sustainable engineering applications.
+    </p>
   </section>
 
   <section class="section project-detail-list reveal">
-    <article class="detail-card" id="hab">
-      <div class="detail-image">🛰️</div>
+
+    <article class="detail-card" id="uhi-taiwan">
+      <div class="detail-image">🌡️</div>
       <div>
-        <h2>Harmful Algal Bloom Detection</h2>
-        <p>Remote sensing-based HAB classification across reservoirs in Taiwan using Sentinel-2, in-situ chlorophyll-a observations, and machine learning models.</p>
-        <div class="mini-tags"><span>Sentinel-2</span><span>Google Earth Engine</span><span>XGBoost</span><span>Random Forest</span></div>
+        <span class="project-date">May 2026 – Current</span>
+        <h2>Comparative Study of Machine Learning Models for District-Level Urban Heat Island Classification in Taiwan</h2>
+        <p>
+          A national-scale urban heat island classification project using satellite-derived land surface variables,
+          meteorological data, and machine learning models to classify district-level urban heat intensity across Taiwan.
+        </p>
+        <div class="mini-tags">
+          <span>Landsat 8/9</span>
+          <span>Machine Learning</span>
+          <span>UHI</span>
+          <span>Taiwan</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/zlfzahra/urban-heat-island-classification" target="_blank">GitHub Repository</a>
+        </div>
       </div>
     </article>
 
-    <article class="detail-card" id="uhi">
-      <div class="detail-image">🌡️</div>
+    <article class="detail-card" id="oci4wq">
+      <div class="detail-image">🛰️</div>
       <div>
-        <h2>Urban Heat Island Forecasting</h2>
-        <p>Urban heat island analysis and forecasting using Landsat 8/9 land surface temperature, meteorological references, and deep learning approaches.</p>
-        <div class="mini-tags"><span>Landsat 8/9</span><span>ERA5</span><span>ConvLSTM</span><span>UHI</span></div>
+        <span class="project-date">Dec 2025 – Current</span>
+        <h2>Ocean Color Instrument for Water Quality (OCI4WQ)</h2>
+        <p>
+          A satellite-based water quality monitoring project focused on ocean color observations,
+          environmental indicators, and remote sensing applications for aquatic ecosystem assessment.
+        </p>
+        <div class="mini-tags">
+          <span>Ocean Color</span>
+          <span>Water Quality</span>
+          <span>Remote Sensing</span>
+          <span>Environmental Monitoring</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="detail-card" id="hab-taiwan">
+      <div class="detail-image">🌿</div>
+      <div>
+        <span class="project-date">Oct 2025 – Jun 2026</span>
+        <h2>Comparative Analysis of Machine Learning Models for Remote Sensing-Based Harmful Algal Bloom Detection Across Reservoirs in Taiwan</h2>
+        <p>
+          A comparative machine learning study for harmful algal bloom detection across Taiwan reservoirs using
+          Sentinel-2 imagery, in-situ chlorophyll-a observations, spectral indices, and classification models.
+        </p>
+        <div class="mini-tags">
+          <span>Sentinel-2</span>
+          <span>Chlorophyll-a</span>
+          <span>Random Forest</span>
+          <span>XGBoost</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/zlfzahra/taiwan-harmful-algal-bloom-detection" target="_blank">GitHub Repository</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="detail-card" id="hab-jakarta">
+      <div class="detail-image">🌊</div>
+      <div>
+        <span class="project-date">Jul 2025 – Oct 2025</span>
+        <h2>Deep Learning-Based Early Detection of Harmful Algal Blooms in Jakarta Bay Using High-Resolution Satellite Imagery</h2>
+        <p>
+          A deep learning-based research project for early HAB detection in Jakarta Bay using high-resolution
+          satellite imagery and remote sensing features to support coastal water quality monitoring.
+        </p>
+        <div class="mini-tags">
+          <span>Jakarta Bay</span>
+          <span>Deep Learning</span>
+          <span>Satellite Imagery</span>
+          <span>HAB Detection</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="detail-card" id="uhi-hsinchu">
+      <div class="detail-image">🏙️</div>
+      <div>
+        <span class="project-date">Jun 2025 – Jul 2025</span>
+        <h2>Deep Learning Forecasting of Urban Heat Islands in Hsinchu Using Multi-Source Geospatial Data</h2>
+        <p>
+          A spatiotemporal forecasting project using Landsat 8/9 land surface temperature,
+          meteorological references, and deep learning models to predict urban heat island patterns in Hsinchu.
+        </p>
+        <div class="mini-tags">
+          <span>Landsat 8/9</span>
+          <span>ConvLSTM</span>
+          <span>ERA5</span>
+          <span>Forecasting</span>
+        </div>
       </div>
     </article>
 
     <article class="detail-card" id="sst">
-      <div class="detail-image">🌊</div>
+      <div class="detail-image">🌡️</div>
       <div>
-        <h2>Sea Surface Temperature Rise Detection</h2>
-        <p>Deep learning model for detecting and classifying sea temperature rise and thermal anomalies from satellite imagery.</p>
-        <div class="mini-tags"><span>CNN</span><span>SST</span><span>Climate</span><span>Satellite Imagery</span></div>
+        <span class="project-date">Apr 2025 – Jun 2025</span>
+        <h2>Deep Learning Model for Detecting and Classifying Sea Temperature Rise Using Satellite Imagery</h2>
+        <p>
+          A satellite-based deep learning project for detecting sea surface temperature rise,
+          thermal anomalies, and climate-related ocean temperature changes from remote sensing imagery.
+        </p>
+        <div class="mini-tags">
+          <span>CNN</span>
+          <span>SST</span>
+          <span>Climate</span>
+          <span>Satellite Imagery</span>
+        </div>
       </div>
     </article>
+
+    <article class="detail-card" id="fwrm">
+      <div class="detail-image">⚙️</div>
+      <div>
+        <span class="project-date">Aug 2023 – Jul 2024</span>
+        <h2>The Design and Development of Food Waste Recycler Machine Prototype for the Utilization of Household Food Waste as Raw Material for Compost Fertilizer</h2>
+        <p>
+          An engineering design project focused on developing a household-scale food waste recycler machine prototype
+          to process organic waste into raw material for compost fertilizer.
+        </p>
+        <div class="mini-tags">
+          <span>Mechanical Design</span>
+          <span>Prototype</span>
+          <span>Food Waste</span>
+          <span>Sustainability</span>
+        </div>
+      </div>
+    </article>
+
   </section>
 </main>
-
-<footer class="footer"><p>© 2026 Zalfa Afifah Zahra</p></footer>
-<script src="script.js"></script>
-</body>
-</html>
