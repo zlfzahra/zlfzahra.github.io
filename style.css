@@ -1,1 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #001b44;
+}
 
+.navbar {
+  margin: 12px 18px;
+  padding: 16px 28px;
+  background: white;
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.navbar a {
+  margin-right: 22px;
+  text-decoration: none;
+  color: #24364f;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: #0038b8;
+}
+
+.cv-button {
+  float: right;
+  background: #dce4ff;
+  padding: 9px 16px;
+  border-radius: 8px;
+  color: #1d2ca3 !important;
+}
+
+.card {
+  margin: 32px auto;
+  padding: 36px;
+  max-width: 980px;
+  background: white;
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+}
+
+h1 {
+  color: #001b44;
+  border-bottom: 2px solid #0038b8;
+  display: inline-block;
+  padding-bottom: 8px;
+}
