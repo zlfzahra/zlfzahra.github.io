@@ -30,6 +30,6 @@ I'm passionate about using **Earth Observation**, **Remote Sensing**, and **Geos
 
 ## 📫 Connect with Me
 
-- LinkedIn: *your-link*
-- Google Scholar: *your-link*
-- Email: *your-email*
+- LinkedIn: https://linkedin.com/in/zalfa-afifah-zahra
+- Google Scholar: https://scholar.google.com/citations?user=tmauvZgAAAAJ&hl=en 
+- Email: zalfaafifahzahra@gmail.com
