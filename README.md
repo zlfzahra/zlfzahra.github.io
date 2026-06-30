@@ -6,18 +6,16 @@ I'm passionate about using **Earth Observation**, **Remote Sensing**, and **Geos
 
 - 🛰️ Earth Observation
 - 🌍 Satellite Remote Sensing
-- 🤖 Geospatial AI & Machine Learning
+- 🤖 Geospatial AI and Machine Learning
 - 🌱 Environmental Monitoring
 - 🌡️ Climate Analytics
-- 💧 Water Resources & Coastal Monitoring
+- 💧 Water Resources and Monitoring
 
 ## 🚀 Current Projects
 
 - Harmful Algal Bloom Detection
 - Urban Heat Island Analysis
 - Sea Surface Temperature Monitoring
-- Land Use/Land Cover Classification
-- Flood Mapping with Earth Observation
 
 ## 🛠️ Tech Stack
 
@@ -25,25 +23,10 @@ I'm passionate about using **Earth Observation**, **Remote Sensing**, and **Geos
 - Python
 - JavaScript (Google Earth Engine)
 
-**Libraries & Frameworks**
-- TensorFlow
-- Scikit-learn
-- XGBoost
-- OpenCV
-- Pandas
-- NumPy
-
 **Geospatial Tools**
 - Google Earth Engine
 - QGIS
 - ArcGIS Pro
-
-## 📚 Currently Learning
-
-- Deep Learning for Earth Observation
-- Computer Vision
-- Foundation Models for Geospatial AI
-- Physics-informed Machine Learning
 
 ## 📫 Connect with Me
 
