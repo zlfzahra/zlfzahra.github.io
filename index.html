@@ -1,96 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zalfa Afifah Zahra</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
   <nav class="navbar">
-    <div class="nav-left">
+    <a href="index.html" class="logo">Zalfa Afifah Zahra</a>
+
+    <div class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
       <a href="publications.html">Publications</a>
       <a href="contact.html">Contact</a>
-    </div>
-
-    <div class="nav-right">
-      <a href="assets/cv.pdf" class="cv-button" target="_blank">Full PDF CV</a>
+      <a href="assets/cv.pdf" class="cv-btn" target="_blank">Full CV</a>
     </div>
   </nav>
 
   <section class="hero">
-    <div class="profile-image">
-      <img src="assets/profile.jpg" alt="Zalfa Afifah Zahra">
-    </div>
+    <div class="hero-text">
+      <p class="eyebrow">Remote Sensing • Earth Observation • Machine Learning</p>
 
-    <div class="hero-content">
-      <h1>Zalfa Afifah Zahra</h1>
+      <h1>
+        Using satellite data and AI to understand our changing planet.
+      </h1>
 
-      <p class="subtitle">
-        Remote Sensing • Earth Observation • Machine Learning
+      <p class="hero-desc">
+        I am interested in remote sensing, geospatial AI, environmental monitoring,
+        and climate-related applications using satellite imagery and machine learning.
       </p>
 
-      <p class="location">
-        📍 Hsinchu, Taiwan
-      </p>
+      <div class="hero-buttons">
+        <a href="projects.html" class="primary-btn">View Projects</a>
+        <a href="assets/cv.pdf" class="secondary-btn" target="_blank">Download CV</a>
+      </div>
 
-      <div class="social-links">
+      <div class="socials">
         <a href="mailto:zalfaafifahzahra@gmail.com">Email</a>
         <a href="https://github.com/zlfzahra" target="_blank">GitHub</a>
         <a href="#" target="_blank">LinkedIn</a>
         <a href="#" target="_blank">Google Scholar</a>
-        <a href="#" target="_blank">ResearchGate</a>
-        <a href="#" target="_blank">ORCID</a>
       </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="assets/profile.jpg" alt="Zalfa Afifah Zahra">
     </div>
   </section>
 
-  <main>
+  <main class="container">
+
     <section class="card">
       <h2>About</h2>
       <p>
-        Master's graduate in Civil Engineering and Environmental Informatics with research interests in remote sensing, Earth observation, machine learning, and environmental monitoring.
+        Master's graduate in Civil Engineering and Environmental Informatics with
+        research interests in satellite remote sensing, Earth observation,
+        machine learning, and environmental monitoring.
       </p>
     </section>
 
     <section class="card">
       <h2>Featured Projects</h2>
 
-      <div class="project-list">
-        <div class="project-item">
+      <div class="project-grid">
+        <div class="project-card">
+          <span>🛰️</span>
           <h3>Harmful Algal Bloom Detection</h3>
           <p>Sentinel-2 • Google Earth Engine • Random Forest • XGBoost</p>
         </div>
 
-        <div class="project-item">
+        <div class="project-card">
+          <span>🌡️</span>
           <h3>Urban Heat Island Forecasting</h3>
           <p>Landsat 8/9 • ERA5 • ConvLSTM • Machine Learning</p>
         </div>
 
-        <div class="project-item">
+        <div class="project-card">
+          <span>🌊</span>
           <h3>Sea Surface Temperature Rise Detection</h3>
-          <p>Satellite Imagery • CNN • Temperature Anomaly Classification</p>
+          <p>Satellite imagery • CNN • Temperature anomaly classification</p>
         </div>
       </div>
     </section>
 
     <section class="card">
-      <h2>News</h2>
+      <h2>Latest News</h2>
       <p>Portfolio website under development.</p>
     </section>
+
   </main>
 
-</body>
+  <footer>
+    <p>© 2026 Zalfa Afifah Zahra • Built with GitHub Pages</p>
+  </footer>
 
+</body>
 </html>
