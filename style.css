@@ -1,51 +1,79 @@
+:root {
+  --primary: #d96c9d;
+  --primary-dark: #b94f7f;
+  --background: #fff9fc;
+  --surface: #ffffff;
+  --border: #f2d8e5;
+  --text: #2e2e2e;
+  --text-light: #6f6f6f;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f7fb;
-  color: #001b44;
+  font-family: "Inter", Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
 }
 
 .navbar {
   margin: 12px 18px;
   padding: 16px 28px;
-  background: white;
-  border: 1px solid #dbe3ef;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(217, 108, 157, 0.10);
 }
 
 .navbar a {
   margin-right: 22px;
   text-decoration: none;
-  color: #24364f;
+  color: var(--text);
   font-weight: 600;
 }
 
-.navbar a:hover {
-  color: #0038b8;
+.navbar a:hover,
+.navbar a.active {
+  color: var(--primary);
 }
 
 .cv-button {
   float: right;
-  background: #dce4ff;
+  background: #f9d9e7;
   padding: 9px 16px;
-  border-radius: 8px;
-  color: #1d2ca3 !important;
+  border-radius: 10px;
+  color: var(--primary-dark) !important;
+}
+
+.cv-button:hover {
+  background: #f3c4da;
 }
 
 .card {
   margin: 32px auto;
   padding: 36px;
   max-width: 980px;
-  background: white;
-  border: 1px solid #dbe3ef;
-  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgba(217, 108, 157, 0.08);
+}
+
+h1, h2 {
+  color: var(--text);
 }
 
 h1 {
-  color: #001b44;
-  border-bottom: 2px solid #0038b8;
+  border-bottom: 2px solid var(--primary);
   display: inline-block;
   padding-bottom: 8px;
+}
+
+h2 {
+  color: var(--primary);
+}
+
+p {
+  color: var(--text-light);
+  line-height: 1.7;
 }
