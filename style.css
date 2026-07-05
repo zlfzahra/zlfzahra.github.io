@@ -369,10 +369,12 @@ a {
   border-radius: 50%;
   background: linear-gradient(
       135deg,
-      #ffffff,
-      #ffd4e5,
-      #d96c9d
-  );  
+      #FFFFFF 0%,
+      #F7F3E8 25%,
+      #E5D9B6 55%,
+      #A4BE7B 85%,
+      #5F8D4E 100%
+  );
   box-shadow: var(--shadow);
   display: grid;
   place-items: center;
