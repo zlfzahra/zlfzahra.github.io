@@ -1,46 +1,69 @@
-:root {
-  --primary: #d96c9d;
-  --primary-dark: #b94f7f;
-  --primary-soft: #f9d9e7;
-  --primary-lighter: #fff0f7;
+:root{
 
-  --bg: #fff9fc;
-  --bg-gradient: radial-gradient(circle at top left, #ffe5f0 0%, #fff9fc 34%, #ffffff 100%);
-  --surface: rgba(255, 255, 255, 0.9);
-  --card: #ffffff;
+  /* Main Colors */
+  --primary: #5F8D4E;
+  --primary-dark: #285430;
+  --primary-soft: #A4BE7B;
+  --primary-lighter: #F5F2E8;
 
-  --text: #2b2b2b;
-  --muted: #6f6f6f;
-  --soft-text: #8b7280;
+  /* Background */
+  --bg: #FAF9F5;
+  --bg-gradient: radial-gradient(circle at top left,
+      #F6F2E6 0%,
+      #FAF9F5 35%,
+      #FFFFFF 100%);
 
-  --border: #f3dce8;
-  --border-strong: #ecc2d6;
+  --surface: rgba(255,255,255,.92);
+  --card: #FFFFFF;
 
-  --shadow: 0 18px 55px rgba(217, 108, 157, 0.14);
-  --shadow-hover: 0 28px 75px rgba(217, 108, 157, 0.22);
+  /* Typography */
+  --text: #263126;
+  --muted: #66725E;
+  --soft-text: #8A947E;
 
+  /* Borders */
+  --border: #E5D9B6;
+  --border-strong: #CFC19D;
+
+  /* Shadows */
+  --shadow: 0 18px 55px rgba(40,84,48,.10);
+  --shadow-hover: 0 28px 75px rgba(40,84,48,.18);
+
+  /* Radius */
   --radius-lg: 28px;
   --radius-md: 20px;
   --radius-sm: 14px;
 
+  /* Layout */
   --max-width: 1160px;
 }
 
-[data-theme="dark"] {
-  --bg: #140e12;
-  --bg-gradient: radial-gradient(circle at top left, #3a1728 0%, #140e12 45%, #0d0b0d 100%);
-  --surface: rgba(32, 22, 29, 0.88);
-  --card: #21161d;
+[data-theme="dark"]{
 
-  --text: #fff5fa;
-  --muted: #d0b8c4;
-  --soft-text: #b99baa;
+  --bg: #182218;
 
-  --border: #4a2638;
-  --border-strong: #68415a;
+  --bg-gradient: radial-gradient(circle at top left,
+      #2A3D26 0%,
+      #182218 45%,
+      #121812 100%);
 
-  --shadow: 0 18px 55px rgba(0, 0, 0, 0.35);
-  --shadow-hover: 0 28px 75px rgba(0, 0, 0, 0.5);
+  --surface: rgba(33,44,33,.90);
+
+  --card: #223022;
+
+  --text: #F7F8F4;
+
+  --muted: #C8D2BE;
+
+  --soft-text: #9FA996;
+
+  --border: #3D5237;
+
+  --border-strong: #5F8D4E;
+
+  --shadow: 0 18px 55px rgba(0,0,0,.35);
+
+  --shadow-hover: 0 28px 75px rgba(0,0,0,.45);
 }
 
 * {
@@ -344,7 +367,12 @@ a {
   height: 285px;
   padding: 10px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #ffffff, #ffd4e5, #d96c9d);
+  background: linear-gradient(
+      135deg,
+      #ffffff,
+      #ffd4e5,
+      #d96c9d
+  );  
   box-shadow: var(--shadow);
   display: grid;
   place-items: center;
