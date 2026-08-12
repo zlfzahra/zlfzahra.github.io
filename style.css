@@ -612,7 +612,7 @@ a {
 
 
 /* =========================================================
-   PROJECT TITLE + GITHUB
+   PROJECT TITLE + ICON
 ========================================================= */
 
 .project-title {
@@ -629,77 +629,10 @@ a {
 
 
 /* =========================================================
-   GITHUB ICON
+   GITHUB + GOOGLE DRIVE ICON
 ========================================================= */
 
-.project-github {
-  flex: 0 0 auto;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 3px;
-
-  color: var(--accent);
-  text-decoration: none;
-
-  font-size: 22px;
-
-  transition: color 0.2s ease;
-}
-
-.project-github:hover {
-  color: var(--accent-hover);
-}
-
-
-/* =========================================================
-   PROJECT TITLE
-========================================================= */
-
-.project-box h2 {
-  color: var(--text);
-  font-family: "Libertinus Serif", Georgia, serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.35;
-  letter-spacing: 0;
-}
-
-
-/* =========================================================
-   PROJECT DESCRIPTION
-========================================================= */
-
-.project-box p {
-  margin: 0 0 14px;
-
-  color: var(--muted);
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-
-/* =========================================================
-   OTHER PROJECT LINKS
-========================================================= */
-
-.project-box a:not(.project-github) {
-  color: var(--accent);
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.project-box a:not(.project-github):hover {
-  color: var(--accent-hover);
-}
-
-/* =========================================================
-   GOOGLE DRIVE PROJECT LINK
-========================================================= */
-
+.project-github,
 .project-drive {
   flex: 0 0 auto;
 
@@ -717,8 +650,66 @@ a {
   transition: color 0.2s ease;
 }
 
+.project-github:hover,
 .project-drive:hover {
   color: var(--accent-hover);
+}
+
+
+/* =========================================================
+   PROJECT TITLE
+========================================================= */
+
+.project-box h2 {
+  color: var(--text);
+
+  font-family: "Libertinus Serif", Georgia, serif;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+
+/* =========================================================
+   PROJECT DESCRIPTION
+========================================================= */
+
+.project-box p {
+  margin: 0 0 14px;
+
+  color: var(--muted);
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   PROJECT LINKS
+========================================================= */
+
+.project-box a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.project-box a:hover {
+  color: var(--accent-hover);
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.project-github i,
+.project-drive i {
+  display: block;
+
+  text-decoration: none;
 }
 
 /* =========================================================
