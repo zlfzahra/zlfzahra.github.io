@@ -736,43 +736,35 @@ a {
 }
 
 .contact-card {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 
   padding: 22px 0;
 
   border-top: 1px solid var(--border);
 
+  color: var(--text);
   text-decoration: none;
+
+  transition: color 0.2s ease;
 }
 
 .contact-card:hover {
-  background: transparent;
-  transform: none;
+  color: var(--accent);
 }
 
 .contact-card i {
-  display: block;
-
-  margin-bottom: 4px;
+  width: 24px;
 
   color: var(--accent);
-  font-size: 22px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .contact-card span {
-  display: block;
-
-  margin-bottom: 3px;
-
-  color: var(--text);
+  font-size: 18px;
   font-weight: 700;
-}
-
-.contact-card b {
-  color: var(--muted);
-  font-size: 15px;
-  font-weight: 400;
-  word-break: break-word;
 }
 
 /* =========================================================
