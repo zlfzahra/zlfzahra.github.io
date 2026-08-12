@@ -728,7 +728,6 @@ a {
 
 .publication-year {
   padding: 45px 0 16px;
-
   border-bottom: 1px solid var(--border);
 }
 
@@ -744,6 +743,7 @@ a {
   font-family: "Libertinus Serif", Georgia, serif;
   font-size: 30px;
   font-weight: 700;
+
   line-height: 1.2;
 }
 
@@ -765,7 +765,7 @@ a {
 
 
 /* =========================================================
-   PUBLICATION DATE
+   YEAR / DATE LABEL
 ========================================================= */
 
 .publication-item > span {
@@ -773,6 +773,7 @@ a {
 
   font-size: 15px;
   font-weight: 400;
+
   line-height: 1.6;
 }
 
@@ -815,29 +816,6 @@ a {
 
 .publication-title:hover {
   color: var(--accent);
-}
-
-
-/* =========================================================
-   PUBLICATION LINKS
-========================================================= */
-
-.publication-links {
-  margin-top: 8px;
-}
-
-.publication-links a {
-  color: var(--accent);
-
-  text-decoration: underline;
-  text-underline-offset: 3px;
-
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.publication-links a:hover {
-  color: var(--accent-hover);
 }
 
 
