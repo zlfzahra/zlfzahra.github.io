@@ -717,46 +717,76 @@ a {
 ========================================================= */
 
 .publication-list {
-  display: grid;
-  gap: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.publication-item {
-  display: grid;
-  grid-template-columns: 90px 1fr;
-  gap: 25px;
-  align-items: start;
 
-  padding: 23px 0;
+/* =========================================================
+   PUBLICATION YEAR
+========================================================= */
 
-  border-top: 1px solid var(--border);
+.publication-year {
+  padding: 45px 0 16px;
+
+  border-bottom: 1px solid var(--border);
 }
 
-.publication-item:first-child {
-  border-top: 0;
+.publication-year:first-child {
   padding-top: 0;
 }
 
-.publication-item span {
-  display: inline-block;
-  width: fit-content;
+.publication-year h2 {
+  margin: 0;
 
-  padding: 0;
+  color: var(--text);
 
-  background: transparent;
-  border: 0;
-  border-radius: 0;
+  font-family: "Libertinus Serif", Georgia, serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}
 
+
+/* =========================================================
+   PUBLICATION ITEM
+========================================================= */
+
+.publication-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 30px;
+  align-items: start;
+
+  padding: 27px 0;
+
+  border-bottom: 1px solid var(--border);
+}
+
+
+/* =========================================================
+   PUBLICATION DATE
+========================================================= */
+
+.publication-item > span {
   color: var(--soft);
 
   font-size: 15px;
   font-weight: 400;
+  line-height: 1.6;
 }
+
+
+/* =========================================================
+   PUBLICATION TEXT
+========================================================= */
 
 .publication-item p {
   margin: 0;
 
   color: var(--muted);
+
+  font-size: 16px;
   line-height: 1.75;
 }
 
@@ -770,16 +800,72 @@ a {
   font-style: italic;
 }
 
-.publication-links a {
-  color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 3px;
+
+/* =========================================================
+   CLICKABLE PUBLICATION TITLE
+========================================================= */
+
+.publication-title {
+  color: var(--text);
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
 }
 
-.publication-links a::before {
-  content: " · ";
-  color: var(--muted);
-  text-decoration: none;
+.publication-title:hover {
+  color: var(--accent);
+}
+
+
+/* =========================================================
+   PUBLICATION LINKS
+========================================================= */
+
+.publication-links {
+  margin-top: 8px;
+}
+
+.publication-links a {
+  color: var(--accent);
+
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.publication-links a:hover {
+  color: var(--accent-hover);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .publication-year {
+    padding: 38px 0 14px;
+  }
+
+  .publication-year h2 {
+    font-size: 27px;
+  }
+
+  .publication-item {
+    grid-template-columns: 1fr;
+    gap: 5px;
+
+    padding: 22px 0;
+  }
+
+  .publication-item > span {
+    font-size: 14px;
+  }
+
 }
 
 /* =========================================================
