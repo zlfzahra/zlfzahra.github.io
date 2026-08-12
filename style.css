@@ -881,9 +881,21 @@ a {
     text-align: left;
   }
 
-  .hero {
-    padding-top: 80px;
-  }
+   .hero {
+     grid-template-columns: 1fr;
+     padding-top: 80px;
+     text-align: left;
+   }
+   
+   .hero-visual {
+     justify-content: flex-start;
+     margin-top: 20px;
+   }
+   
+   .profile-ring {
+     width: 230px;
+     height: 280px;
+   }
 
   .grid-two,
   .projects-grid,
