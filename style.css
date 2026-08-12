@@ -724,6 +724,7 @@ a {
 
 /* =========================================================
    PUBLICATION YEAR
+   Used for the main Publications section
 ========================================================= */
 
 .publication-year {
@@ -750,15 +751,52 @@ a {
 
 
 /* =========================================================
-   PUBLICATION ITEM
+   MAIN PUBLICATION ITEMS
+   No small year on the left
 ========================================================= */
 
-.publication-item {
+.publication-year + .publication-item {
   display: block;
+
+  width: 100%;
 
   padding: 27px 0;
 
   border-bottom: 1px solid var(--border);
+}
+
+
+/* =========================================================
+   MANUSCRIPTS & CONFERENCE ITEMS
+   Keep year on the left
+========================================================= */
+
+.panel > .publication-list > .publication-item {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 25px;
+  align-items: start;
+
+  padding: 27px 0;
+
+  border-bottom: 1px solid var(--border);
+}
+
+
+/* =========================================================
+   SMALL YEAR
+   Used by Manuscripts & Conference
+========================================================= */
+
+.publication-item > span {
+  display: inline-block;
+
+  width: fit-content;
+
+  color: var(--soft);
+
+  font-size: 15px;
+  font-weight: 400;
 }
 
 
@@ -817,8 +855,26 @@ a {
     font-size: 27px;
   }
 
-  .publication-item {
+
+  /* Main publications */
+
+  .publication-year + .publication-item {
     padding: 22px 0;
+  }
+
+
+  /* Manuscripts & Conference */
+
+  .panel > .publication-list > .publication-item {
+    grid-template-columns: 60px 1fr;
+    gap: 18px;
+
+    padding: 22px 0;
+  }
+
+  .publication-item p {
+    font-size: 16px;
+    line-height: 1.7;
   }
 
 }
