@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -9,9 +10,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
 
-  <script src="https://kit.fontawesome.com/4b4f0f0f4e.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/4b4f0f0f4e.js"
+    crossorigin="anonymous"
+  ></script>
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -20,110 +27,668 @@
 
 <header class="site-header">
   <nav class="navbar">
-    <a class="brand" href="index.html">
-      <span class="brand-dot"></span>
-      Zalfa Afifah Zahra
-    </a>
 
-    <button class="menu-toggle" aria-label="Open menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+```
+<a class="brand" href="index.html">
+  <span class="brand-dot"></span>
+  Zalfa Afifah Zahra
+</a>
 
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a class="active" href="projects.html">Projects</a>
-      <a href="publications.html">Publications</a>
-      <a href="contact.html">Contact</a>
-      <button id="themeToggle" class="theme-toggle">🌙</button>
-    </div>
+<button class="menu-toggle" aria-label="Open menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<div class="nav-links">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a class="active" href="projects.html">Projects</a>
+  <a href="publications.html">Publications</a>
+  <a href="contact.html">Contact</a>
+
+  <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+    🌙
+  </button>
+</div>
+```
+
   </nav>
 </header>
 
 <main>
-  <!-- HERO -->
+
+  <!-- =====================================================
+       PAGE HERO
+  ====================================================== -->
+
   <section class="page-hero section reveal">
 
-    <h1>
-      Projects
-    </h1>
+```
+<span class="section-label">Selected Work</span>
+
+<h1>Projects</h1>
+
+<p>
+  A collection of engineering and research projects spanning mechanical
+  design, environmental monitoring, remote sensing, geospatial AI,
+  and machine learning.
+</p>
+```
 
   </section>
-  
-  <section class="section projects-grid reveal">
 
-  <article class="project-box">
-    <h2>Comparative Study of Machine Learning Models for District-Level Urban Heat Island Classification in Taiwan</h2>
-    <p>
-      A national-scale urban heat island classification project using satellite-derived land surface variables,
-      meteorological data, and machine learning models to classify district-level urban heat intensity across Taiwan.
-    </p>
-    <a href="https://github.com/zlfzahra/urban-heat-island-classification" target="_blank">View Project →</a>
-  </article>
+  <!-- =====================================================
+       RESEARCH AND ENVIRONMENTAL AI
+  ====================================================== -->
 
-  <article class="project-box">
-    <h2>Ocean Color Instrument for Water Quality (OCI4WQ)</h2>
-    <p>
-      A satellite-based water quality monitoring project focused on ocean color observations,
-      environmental indicators, and remote sensing applications for aquatic ecosystem assessment.
-    </p>
-    <a href="#">View Project →</a>
-  </article>
+  <section class="section projects-section reveal">
 
-  <article class="project-box">
-    <h2>Comparative Analysis of Machine Learning Models for Remote Sensing-Based Harmful Algal Bloom Detection Across Reservoirs in Taiwan</h2>
-    <p>
-      A comparative machine learning study for harmful algal bloom detection across Taiwan reservoirs using
-      Sentinel-2 imagery, in-situ chlorophyll-a observations, spectral indices, and classification models.
-    </p>
-    <a href="https://github.com/zlfzahra/taiwan-harmful-algal-bloom-detection" target="_blank">View Project →</a>
-  </article>
+```
+<div class="section-heading">
 
-  <article class="project-box">
-    <h2>Deep Learning-Based Early Detection of Harmful Algal Blooms in Jakarta Bay Using High-Resolution Satellite Imagery</h2>
-    <p>
-      A deep learning-based research project for early HAB detection in Jakarta Bay using high-resolution
-      satellite imagery and remote sensing features to support coastal water quality monitoring.
-    </p>
-    <a href="#">View Project →</a>
-  </article>
+  <span class="section-label">Research & Environmental AI</span>
 
-  <article class="project-box">
-    <h2>Deep Learning Forecasting of Urban Heat Islands in Hsinchu Using Multi-Source Geospatial Data</h2>
-    <p>
-      A spatiotemporal forecasting project using Landsat 8/9 land surface temperature,
-      meteorological references, and deep learning models to predict urban heat island patterns in Hsinchu.
-    </p>
-    <a href="#">View Project →</a>
-  </article>
+  <h2>
+    Remote Sensing, Geospatial AI & Environmental Modelling
+  </h2>
 
-  <article class="project-box">
-    <h2>Deep Learning Model for Detecting and Classifying Sea Temperature Rise Using Satellite Imagery</h2>
-    <p>
-      A satellite-based deep learning project for detecting sea surface temperature rise,
-      thermal anomalies, and climate-related ocean temperature changes from remote sensing imagery.
-    </p>
-    <a href="#">View Project →</a>
-  </article>
+  <p>
+    Research projects focused on satellite remote sensing, machine learning,
+    deep learning, environmental monitoring, and climate-related analysis.
+  </p>
 
-  <article class="project-box">
-    <h2>The Design and Development of Food Waste Recycler Machine Prototype</h2>
-    <p>
-      An engineering design project focused on developing a household-scale food waste recycler machine prototype
-      to process organic waste into raw material for compost fertilizer.
-    </p>
-    <a href="#">View Project →</a>
-  </article>
+</div>
+
+
+<!-- Urban Heat Island -->
+
+<article class="project-box">
+
+  <span class="project-category">
+    Environmental AI · Remote Sensing
+  </span>
+
+  <h2>
+    Comparative Study of Machine Learning Models for District-Level Urban
+    Heat Island Classification in Taiwan
+  </h2>
+
+  <p>
+    A national-scale urban heat island classification project using
+    satellite-derived land surface variables, meteorological data,
+    and machine learning models to classify district-level urban heat
+    intensity across Taiwan.
+  </p>
+
+  <div class="project-tags">
+    <span>Machine Learning</span>
+    <span>Remote Sensing</span>
+    <span>GIS</span>
+    <span>Python</span>
+    <span>Google Earth Engine</span>
+  </div>
+
+  <a
+    href="https://github.com/zlfzahra/urban-heat-island-classification"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Project →
+  </a>
+
+</article>
+
+<!-- HAB Taiwan -->
+
+<article class="project-box">
+
+  <span class="project-category">
+    Master's Research · Remote Sensing
+  </span>
+
+  <h2>
+    Comparative Analysis of Machine Learning Models for Remote
+    Sensing-Based Harmful Algal Bloom Detection Across Reservoirs in Taiwan
+  </h2>
+
+  <p>
+    A comparative machine learning study for harmful algal bloom detection
+    across Taiwan reservoirs using Sentinel-2 imagery, in-situ chlorophyll-a
+    observations, spectral indices, and classification models.
+  </p>
+
+  <div class="project-tags">
+    <span>Sentinel-2</span>
+    <span>Machine Learning</span>
+    <span>Python</span>
+    <span>Google Earth Engine</span>
+    <span>Water Quality</span>
+  </div>
+
+  <a
+    href="https://github.com/zlfzahra/taiwan-harmful-algal-bloom-detection"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Project →
+  </a>
+
+</article>
+
+
+<!-- Jakarta Bay -->
+
+<article class="project-box">
+
+  <span class="project-category">
+    Deep Learning · Coastal Environment
+  </span>
+
+  <h2>
+    Deep Learning-Based Early Detection of Harmful Algal Blooms
+    in Jakarta Bay Using High-Resolution Satellite Imagery
+  </h2>
+
+  <p>
+    A deep learning-based research project for early HAB detection
+    in Jakarta Bay using high-resolution satellite imagery and
+    remote sensing features to support coastal water quality monitoring.
+  </p>
+
+  <div class="project-tags">
+    <span>Deep Learning</span>
+    <span>Satellite Imagery</span>
+    <span>HAB Detection</span>
+    <span>Coastal Monitoring</span>
+  </div>
+
+  <a href="#">
+    View Project →
+  </a>
+
+</article>
+
+
+<!-- Hsinchu UHI -->
+
+<article class="project-box">
+
+  <span class="project-category">
+    Spatiotemporal Modelling · Climate
+  </span>
+
+  <h2>
+    Deep Learning Forecasting of Urban Heat Islands in Hsinchu
+    Using Multi-Source Geospatial Data
+  </h2>
+
+  <p>
+    A spatiotemporal forecasting project using Landsat 8/9 land surface
+    temperature, meteorological references, and deep learning models
+    to predict urban heat island patterns in Hsinchu.
+  </p>
+
+  <div class="project-tags">
+    <span>Deep Learning</span>
+    <span>Landsat</span>
+    <span>Climate Analysis</span>
+    <span>Geospatial Data</span>
+  </div>
+
+  <a href="#">
+    View Project →
+  </a>
+
+</article>
+
+
+<!-- Sea Temperature -->
+
+<article class="project-box">
+
+  <span class="project-category">
+    Deep Learning · Ocean Climate
+  </span>
+
+  <h2>
+    Deep Learning Model for Detecting and Classifying Sea Temperature
+    Rise Using Satellite Imagery
+  </h2>
+
+  <p>
+    A satellite-based deep learning project for detecting sea surface
+    temperature rise, thermal anomalies, and climate-related ocean
+    temperature changes from remote sensing imagery.
+  </p>
+
+  <div class="project-tags">
+    <span>Deep Learning</span>
+    <span>Satellite Imagery</span>
+    <span>Sea Surface Temperature</span>
+    <span>Climate</span>
+  </div>
+
+  <a href="#">
+    View Project →
+  </a>
+
+</article>
+```
 
   </section>
+
+  <!-- =====================================================
+       MECHANICAL DESIGN AND ENGINEERING
+  ====================================================== -->
+
+  <section class="section projects-section reveal">
+
+```
+<div class="section-heading">
+
+  <span class="section-label">
+    Mechanical Design & Engineering
+  </span>
+
+  <h2>
+    Machine Design, CAD & Engineering Projects
+  </h2>
+
+  <p>
+    Engineering design projects developed during my Mechanical Design
+    Engineering studies at Politeknik Manufaktur Negeri Bandung,
+    covering CAD modelling, machine design, technical drawing,
+    manufacturing, prototyping, and mechanical systems.
+  </p>
+
+</div>
+
+
+<!-- =================================================
+     FEATURED PROJECT
+================================================== -->
+
+<article class="project-box project-featured">
+
+  <span class="project-category">
+    Final Project · Aug 2023 – Jul 2024
+  </span>
+
+  <h2>
+    The Design and Development of a Food Waste Recycler Machine Prototype
+  </h2>
+
+  <p>
+    A household-scale food waste recycler machine designed to process
+    organic household waste into ready-to-use compost fertilizer.
+    The machine integrates mechanical, electrical, and informatics
+    domains using the VDI 2206 design methodology.
+  </p>
+
+  <p>
+    The system incorporates sensors to monitor key composting parameters,
+    including carbon, nitrogen, oxygen, moisture content, pH, and
+    temperature, with consideration of SNI 19-7030-2004 compost standards.
+    The final design resulted in a physical prototype, 3D CAD models,
+    technical drawings, and system design documentation.
+  </p>
+
+  <div class="project-meta">
+    <span>
+      <strong>Institution:</strong>
+      Politeknik Manufaktur Negeri Bandung
+    </span>
+
+    <span>
+      <strong>Dimensions:</strong>
+      350 × 450 × 450 mm
+    </span>
+  </div>
+
+  <div class="project-tags">
+    <span>Mechanical Design</span>
+    <span>CAD</span>
+    <span>3D Modelling</span>
+    <span>Technical Drawing</span>
+    <span>Prototyping</span>
+    <span>VDI 2206</span>
+    <span>System Integration</span>
+    <span>Environmental Engineering</span>
+  </div>
+
+  <a
+    href="assets/projects/mechanical/food-waste-recycler.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Technical Documentation →
+  </a>
+
+</article>
+
+
+<!-- =================================================
+     CUTTER MACHINE
+================================================== -->
+
+<article class="project-box">
+
+  <span class="project-category">
+    Machine Design · Oct 2022
+  </span>
+
+  <h2>
+    Cutter Machine
+  </h2>
+
+  <p>
+    Mechanical design of a paper cutter machine for accurately cutting
+    stacks of paper, focusing on machine structure, cutting mechanisms,
+    assembly design, and manufacturing considerations.
+  </p>
+
+  <div class="project-tags">
+    <span>Machine Design</span>
+    <span>CAD</span>
+    <span>Assembly</span>
+    <span>Technical Drawing</span>
+  </div>
+
+  <a
+    href="assets/projects/mechanical/cutter-machine.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Full Assembly →
+  </a>
+
+</article>
+
+
+<!-- =================================================
+     DIVIDING HEAD
+================================================== -->
+
+<article class="project-box">
+
+  <span class="project-category">
+    Precision Machine Design · Oct 2022
+  </span>
+
+  <h2>
+    Dividing Head Machine
+  </h2>
+
+  <p>
+    Precision mechanical design of a dividing head used for accurate
+    angular positioning of workpieces during milling operations,
+    including gear cutting, slotting, and keyway machining.
+  </p>
+
+  <div class="project-tags">
+    <span>Mechanical Design</span>
+    <span>CAD</span>
+    <span>Machining</span>
+    <span>Precision Engineering</span>
+  </div>
+
+  <a
+    href="assets/projects/mechanical/dividing-head.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Full Assembly →
+  </a>
+
+</article>
+
+
+<!-- =================================================
+     STIRRUP BENDING
+================================================== -->
+
+<article class="project-box">
+
+  <span class="project-category">
+    Automation · Jun 2022
+  </span>
+
+  <h2>
+    Automatic Stirrup Bending Machine
+  </h2>
+
+  <p>
+    Mechanical system designed to automate the bending of steel rods
+    into stirrups for reinforced concrete structures, improving
+    production speed, consistency, and dimensional accuracy.
+  </p>
+
+  <div class="project-tags">
+    <span>Machine Design</span>
+    <span>Automation</span>
+    <span>CAD</span>
+    <span>Mechanism Design</span>
+  </div>
+
+  <a
+    href="assets/projects/mechanical/stirrup-bending-machine.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Draft →
+  </a>
+
+</article>
+
+
+<!-- =================================================
+     FLAT CONVEYOR
+================================================== -->
+
+<article class="project-box">
+
+  <span class="project-category">
+    Material Handling · Jun 2022
+  </span>
+
+  <h2>
+    Flat Conveyor
+  </h2>
+
+  <p>
+    Design of a flat belt conveyor system for continuous horizontal
+    material transportation in manufacturing, logistics, and
+    packaging applications.
+  </p>
+
+  <div class="project-tags">
+    <span>Mechanical Design</span>
+    <span>CAD</span>
+    <span>Conveyor System</span>
+    <span>Assembly</span>
+  </div>
+
+  <a
+    href="assets/projects/mechanical/flat-conveyor.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Technical Documentation →
+  </a>
+
+</article>
+
+
+<!-- =================================================
+     PICCO TRANSMISSION
+================================================== -->
+
+<article class="project-box">
+
+  <span class="project-category">
+    Power Transmission · Apr 2022
+  </span>
+
+  <h2>
+    PICCO Transmission
+  </h2>
+
+  <p>
+    Compact mechanical power transmission design for small-scale
+    applications, focusing on torque transmission, rotational speed,
+    and mechanical power transfer.
+  </p>
+
+  <div class="project-tags">
+    <span>Mechanical Design</span>
+    <span>Power Transmission</span>
+    <span>CAD</span>
+    <span>Machine Elements</span>
+  </div>
+
+  <a
+    href="assets/projects/mechanical/picco-transmission.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Technical Documentation →
+  </a>
+
+</article>
+
+
+<!-- =================================================
+     MATERIAL HANDLING
+================================================== -->
+
+<article class="project-box">
+
+  <span class="project-category">
+    Material Handling · Mar 2022
+  </span>
+
+  <h2>
+    Material Handling Device
+  </h2>
+
+  <p>
+    Mechanical handling system designed to support the movement and
+    handling of materials within production environments, with emphasis
+    on structural design, assembly, and operational efficiency.
+  </p>
+
+  <div class="project-tags">
+    <span>Mechanical Design</span>
+    <span>CAD</span>
+    <span>Material Handling</span>
+    <span>Assembly</span>
+  </div>
+
+  <a
+    href="assets/projects/mechanical/material-handling.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Draft & Full Assembly →
+  </a>
+
+</article>
+
+
+<!-- =================================================
+     V SHAPED CONVEYOR
+================================================== -->
+
+<article class="project-box">
+
+  <span class="project-category">
+    Material Handling · Mar 2022
+  </span>
+
+  <h2>
+    V-Shaped Roller Conveyor
+  </h2>
+
+  <p>
+    Specialized roller conveyor designed to guide and stabilize
+    cylindrical workpieces such as pipes and rods during material
+    transportation.
+  </p>
+
+  <div class="project-tags">
+    <span>Mechanical Design</span>
+    <span>CAD</span>
+    <span>Conveyor System</span>
+    <span>Material Handling</span>
+  </div>
+
+  <a
+    href="assets/projects/mechanical/v-shaped-conveyor.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Technical Documentation →
+  </a>
+
+</article>
+
+
+<!-- =================================================
+     WASTE WASHER
+================================================== -->
+
+<article class="project-box">
+
+  <span class="project-category">
+    Recycling System · Nov 2021
+  </span>
+
+  <h2>
+    Waste Washer Machine
+  </h2>
+
+  <p>
+    Mechanical system designed for washing and separating contaminants
+    from recyclable materials, incorporating cleaning, material separation,
+    and centrifugal mechanisms.
+  </p>
+
+  <div class="project-tags">
+    <span>Machine Design</span>
+    <span>CAD</span>
+    <span>Recycling</span>
+    <span>Material Separation</span>
+  </div>
+
+  <a
+    href="assets/projects/mechanical/waste-washer.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Draft & Full Assembly →
+  </a>
+
+</article>
+```
+
+  </section>
+
 </main>
 
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
 <footer class="footer">
-  <p>© 2026 Zalfa Afifah Zahra</p>
+
+  <p>
+    © 2026 Zalfa Afifah Zahra
+  </p>
+
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
