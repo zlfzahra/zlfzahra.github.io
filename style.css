@@ -271,35 +271,36 @@ a {
 
 .social-row {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 20px;
 
   margin-top: 28px;
 }
 
 .social-row a {
-  display: inline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25px;
+  height: 25px;
+
   padding: 0;
 
-  background: transparent;
-  border: 0;
-  border-radius: 0;
+  color: var(--accent);
+  text-decoration: none;
 
-  color: var(--muted);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 21px;
 
   transition: color 0.2s ease;
 }
 
 .social-row a:hover {
-  color: var(--accent);
-  background: transparent;
-  transform: none;
+  color: var(--accent-hover);
+}
+
+.social-row i {
+  font-size: inherit;
 }
 
 /* =========================================================
