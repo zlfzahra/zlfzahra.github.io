@@ -738,7 +738,7 @@ a {
 .contact-card {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 14px;
 
   padding: 22px 0;
 
@@ -755,15 +755,17 @@ a {
 }
 
 .contact-card i {
-  width: 26px;
+  flex: 0 0 26px;
 
   color: var(--accent);
   font-size: 21px;
-
   text-align: center;
 }
 
 .contact-card span {
+  margin: 0;
+
+  color: var(--text);
   font-family: "Libertinus Serif", Georgia, serif;
   font-size: 18px;
   font-weight: 700;
