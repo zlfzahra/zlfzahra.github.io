@@ -1213,3 +1213,23 @@ section[id] {
         scroll-margin-top: 85px;
     }
 }
+
+/* Sticky Navigation Header */
+.site-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--bg);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+/* Prevent section titles from being hidden behind header */
+section[id] {
+    scroll-margin-top: 100px;
+}
