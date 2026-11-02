@@ -1185,3 +1185,31 @@ a {
   }
 }
 
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 105px;
+}
+
+/* Sticky navigation */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Section positioning */
+section[id] {
+    scroll-margin-top: 105px;
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+    html {
+        scroll-padding-top: 85px;
+    }
+
+    section[id] {
+        scroll-margin-top: 85px;
+    }
+}
