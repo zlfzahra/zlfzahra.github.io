@@ -1087,3 +1087,37 @@ main > #contact h1 {
     border-radius: 20px;
   }
 }
+
+/* CONTACT SECTION */
+main > #contact {
+  border: 1px solid var(--accent);
+  border-radius: 24px;
+  padding: 40px;
+  margin: 30px auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* CONTACT HEADING */
+#contact > .page-hero h1 {
+  color: var(--accent-warm);
+}
+
+/* CONTACT GRID */
+#contact .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 55px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  main > #contact {
+    padding: 24px 18px;
+    margin: 20px 12px;
+  }
+
+  #contact .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
