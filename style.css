@@ -1052,7 +1052,10 @@ a {
 }
 
 /* Section Borders */
-main > section:not(#home) {
+main > #about,
+main > #projects,
+main > #publications,
+main > #contact {
   border: 1px solid var(--accent);
   border-radius: 24px;
   padding: 40px;
@@ -1061,13 +1064,24 @@ main > section:not(#home) {
 }
 
 /* Section Headings */
-main > section:not(#home) h1 {
+main > #about h1,
+main > #projects h1,
+main > #publications h1,
+main > #contact h1 {
   color: var(--accent-warm);
+}
+
+/* Contact Spacing */
+#contact .page-hero {
+  padding-top: 45px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  main > section:not(#home) {
+  main > #about,
+  main > #projects,
+  main > #publications,
+  main > #contact {
     padding: 24px 18px;
     margin: 20px 12px;
     border-radius: 20px;
