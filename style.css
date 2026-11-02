@@ -5,12 +5,18 @@
 
 :root {
   --bg: #ffffff;
-  --text: #202020;
-  --muted: #666666;
-  --soft: #888888;
-  --accent: #315f52;
-  --accent-hover: #24483e;
-  --border: #dddddd;
+  --text: #002347;
+  --muted: #334b63;
+  --soft: #718397;
+
+  --accent: #003F7D;
+  --accent-hover: #002347;
+
+  --accent-warm: #FF8E00;
+  --accent-warm-hover: #FD7702;
+  --accent-orange-strong: #FF5003;
+
+  --border: #d8e1eb;
 
   --max-width: 1060px;
 }
@@ -47,8 +53,8 @@ a {
 }
 
 ::selection {
-  background: #dfe9e5;
-  color: var(--text);
+  background: #FF8E00;
+  color: #002347;
 }
 
 /* =========================================================
@@ -158,7 +164,7 @@ a {
 .eyebrow {
   margin: 0 0 12px;
 
-  color: var(--accent);
+  color: var(--accent-warm);
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -990,13 +996,19 @@ a {
 ========================================================= */
 
 [data-theme="dark"] {
-  --bg: #171918;
-  --text: #eeeeeb;
-  --muted: #b7bbb6;
-  --soft: #929792;
-  --accent: #9fc5b7;
-  --accent-hover: #c0ddd3;
-  --border: #363a37;
+  --bg: #002347;
+  --text: #ffffff;
+  --muted: #c2d0df;
+  --soft: #91a6bb;
+
+  --accent: #FF8E00;
+  --accent-hover: #FD7702;
+
+  --accent-warm: #FF8E00;
+  --accent-warm-hover: #FD7702;
+  --accent-orange-strong: #FF5003;
+
+  --border: #29425b;
 }
 
 [data-theme="dark"] .btn.primary {
@@ -1008,7 +1020,7 @@ a {
 }
 
 [data-theme="dark"] ::selection {
-  background: #355046;
+  background: #70420b;
   color: #ffffff;
 }
 
