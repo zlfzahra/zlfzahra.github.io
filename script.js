@@ -33,16 +33,3 @@ const observer = new IntersectionObserver((entries) => {
 
 reveals.forEach(el => observer.observe(el));
 
-document.addEventListener("DOMContentLoaded", () => {
-  const intro = document.getElementById("aircraft-intro");
-
-  if (!intro) return;
-
-  setTimeout(() => {
-    intro.classList.add("hide");
-
-    setTimeout(() => {
-      intro.remove();
-    }, 800);
-  }, 5000);
-});
