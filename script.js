@@ -33,3 +33,33 @@ const observer = new IntersectionObserver((entries) => {
 
 reveals.forEach(el => observer.observe(el));
 
+const sections = document.querySelectorAll(
+    "#home, #about, #projects, #publications, #contact"
+);
+
+const navLinks = document.querySelectorAll(".nav-links a");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const currentId = entry.target.id;
+
+                navLinks.forEach((link) => {
+                    link.classList.toggle(
+                        "active",
+                        link.getAttribute("href") === `#${currentId}`
+                    );
+                });
+            }
+        });
+    },
+    {
+        rootMargin: "-25% 0px -60% 0px",
+        threshold: 0
+    }
+);
+
+sections.forEach((section) => {
+    observer.observe(section);
+});
