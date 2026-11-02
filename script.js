@@ -90,3 +90,35 @@ const sectionObserver = new IntersectionObserver(
 sections.forEach((section) => {
   sectionObserver.observe(section);
 });
+
+document.querySelectorAll(".projects-carousel").forEach((carousel) => {
+    const track = carousel.querySelector(".projects-grid");
+    const prev = carousel.querySelector(".project-prev");
+    const next = carousel.querySelector(".project-next");
+
+    function updateButtons() {
+        prev.disabled = track.scrollLeft <= 0;
+
+        next.disabled =
+            track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+    }
+
+    function slide(direction) {
+        const card = track.querySelector(".project-box");
+        const gap = parseFloat(getComputedStyle(track).gap) || 0;
+        const distance = card.offsetWidth + gap;
+
+        track.scrollBy({
+            left: direction * distance,
+            behavior: "smooth"
+        });
+    }
+
+    prev.addEventListener("click", () => slide(-1));
+    next.addEventListener("click", () => slide(1));
+
+    track.addEventListener("scroll", updateButtons);
+    window.addEventListener("resize", updateButtons);
+
+    updateButtons();
+});
