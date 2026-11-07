@@ -109,9 +109,10 @@ document.querySelectorAll(".projects-carousel").forEach((carousel) => {
         slides.forEach((slide, i) => {
             slide.classList.toggle("active", i === index);
         });
-
-        currentNumber.textContent = String(index + 1).padStart(2, "0");
-
+    
+        // UPDATE SLIDE COUNTER
+        currentNumber.textContent = index + 1;
+    
         prevButton.disabled = index === 0;
         nextButton.disabled = index === slides.length - 1;
     }
