@@ -946,10 +946,9 @@ a {
    }
 
   .grid-two,
-  .projects-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
+.contact-grid {
+  grid-template-columns: 1fr;
+}
   
   .contact-grid {
     gap: 0;
@@ -1112,6 +1111,10 @@ main > #contact {
   }
 }
 
+/* =====================================
+   PROJECTS CAROUSEL
+===================================== */
+
 .projects-carousel {
   display: flex;
   align-items: center;
@@ -1140,10 +1143,10 @@ main > #contact {
   flex: 0 0 calc((100% - 44px) / 3);
   min-width: 0;
   scroll-snap-align: start;
-  box-sizing: border-box;
 }
 
-/* Navigation arrows */
+/* NAVIGATION BUTTONS */
+
 .project-nav {
   flex: 0 0 38px;
   width: 38px;
@@ -1151,13 +1154,10 @@ main > #contact {
   display: flex;
   align-items: center;
   justify-content: center;
-
   border: 1px solid var(--border);
   border-radius: 50%;
-
   background: var(--bg);
   color: var(--accent);
-
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -1173,14 +1173,16 @@ main > #contact {
   cursor: not-allowed;
 }
 
-/* Tablet */
+/* TABLET */
+
 @media (max-width: 900px) {
   .projects-grid .project-box {
     flex-basis: calc((100% - 22px) / 2);
   }
 }
 
-/* Mobile */
+/* MOBILE */
+
 @media (max-width: 650px) {
   .projects-carousel {
     gap: 8px;
