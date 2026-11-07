@@ -91,22 +91,33 @@ sections.forEach((section) => {
   sectionObserver.observe(section);
 });
 
+// =====================================
+// PROJECTS CAROUSEL
+// =====================================
+
 document.querySelectorAll(".projects-carousel").forEach((carousel) => {
     const track = carousel.querySelector(".projects-grid");
     const prev = carousel.querySelector(".project-prev");
     const next = carousel.querySelector(".project-next");
 
-    function updateButtons() {
-        prev.disabled = track.scrollLeft <= 0;
+    // Pastikan semua elemen tersedia
+    if (!track || !prev || !next) return;
 
-        next.disabled =
-            track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+    function updateButtons() {
+        const maxScroll = track.scrollWidth - track.clientWidth;
+
+        prev.disabled = track.scrollLeft <= 2;
+        next.disabled = track.scrollLeft >= maxScroll - 2;
     }
 
     function slide(direction) {
-        const card = track.querySelector(".project-box");
-        const gap = parseFloat(getComputedStyle(track).gap) || 0;
-        const distance = card.offsetWidth + gap;
+        const firstCard = track.querySelector(".project-box");
+
+        if (!firstCard) return;
+
+        const trackStyle = window.getComputedStyle(track);
+        const gap = parseFloat(trackStyle.columnGap) || 0;
+        const distance = firstCard.getBoundingClientRect().width + gap;
 
         track.scrollBy({
             left: direction * distance,
@@ -120,5 +131,6 @@ document.querySelectorAll(".projects-carousel").forEach((carousel) => {
     track.addEventListener("scroll", updateButtons);
     window.addEventListener("resize", updateButtons);
 
-    updateButtons();
+    // Perbarui status tombol setelah layout selesai dimuat
+    requestAnimationFrame(updateButtons);
 });
