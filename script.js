@@ -92,45 +92,43 @@ sections.forEach((section) => {
 });
 
 // =====================================
-// PROJECTS CAROUSEL
+// PROJECTS SLIDE NAVIGATION
 // =====================================
 
 document.querySelectorAll(".projects-carousel").forEach((carousel) => {
-    const track = carousel.querySelector(".projects-grid");
-    const prev = carousel.querySelector(".project-prev");
-    const next = carousel.querySelector(".project-next");
+    const slides = carousel.querySelectorAll(".project-slide");
+    const prevButton = carousel.querySelector(".project-prev");
+    const nextButton = carousel.querySelector(".project-next");
 
-    // Pastikan semua elemen tersedia
-    if (!track || !prev || !next) return;
+    const counter = carousel.parentElement.querySelector(".project-counter");
+    const currentNumber = counter.querySelector(".project-current");
 
-    function updateButtons() {
-        const maxScroll = track.scrollWidth - track.clientWidth;
+    let currentSlide = 0;
 
-        prev.disabled = track.scrollLeft <= 2;
-        next.disabled = track.scrollLeft >= maxScroll - 2;
-    }
-
-    function slide(direction) {
-        const firstCard = track.querySelector(".project-box");
-
-        if (!firstCard) return;
-
-        const trackStyle = window.getComputedStyle(track);
-        const gap = parseFloat(trackStyle.columnGap) || 0;
-        const distance = firstCard.getBoundingClientRect().width + gap;
-
-        track.scrollBy({
-            left: direction * distance,
-            behavior: "smooth"
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle("active", i === index);
         });
+
+        currentNumber.textContent = String(index + 1).padStart(2, "0");
+
+        prevButton.disabled = index === 0;
+        nextButton.disabled = index === slides.length - 1;
     }
 
-    prev.addEventListener("click", () => slide(-1));
-    next.addEventListener("click", () => slide(1));
+    prevButton.addEventListener("click", () => {
+        if (currentSlide > 0) {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+    });
 
-    track.addEventListener("scroll", updateButtons);
-    window.addEventListener("resize", updateButtons);
+    nextButton.addEventListener("click", () => {
+        if (currentSlide < slides.length - 1) {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+    });
 
-    // Perbarui status tombol setelah layout selesai dimuat
-    requestAnimationFrame(updateButtons);
+    showSlide(currentSlide);
 });
